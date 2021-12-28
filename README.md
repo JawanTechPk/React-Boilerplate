@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+<!-- # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -67,4 +67,38 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 ### `npm run build` fails to minify
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify) -->
+
+# Getting Started with Create React App
+
+Project Contains
+
+## React
+
+React is a free and open-source front-end JavaScript library for building user interfaces based on UI components
+
+"react": "^17.0.2",
+
+## Bootstrap
+
+Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development.
+
+"bootstrap": "^5.1.3",
+
+## Redux
+
+Redux is an open-source JavaScript library for managing and centralizing application state. It is most commonly used with libraries such as React or Angular for building user interfaces.
+
+"redux": "^4.1.2",
+
+## React router Dom
+
+React Router is used to define multiple routes in the application. When a user types a specific URL into the browser, and if this URL path matches any 'route' inside the router file, the user will be redirected to that particular route.
+
+"react-router-dom": "^5.3.0",
+
+## Redux Thunk
+
+Thunk middleware for Redux. It allows writing functions with logic inside that can interact with a Redux store's dispatch and getState methods.
+
+"redux-thunk": "^2.4.1"
