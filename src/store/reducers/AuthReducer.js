@@ -1,4 +1,4 @@
-import ActionType from "../../Constants/constants";
+import ActionType from "../Constants/constants";
 
 const INITIAL_STATE = {
   //USER AUTH
@@ -17,7 +17,7 @@ const INITIAL_STATE = {
 
 const userSignupReducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
-    case ActionType.USER_SIGNUP_REQ:
+    case ActionType.USER_SIGNUP_REQUEST:
       return {
         ...state,
         UserSignUpLoading: true,
@@ -49,7 +49,7 @@ const userSignupReducer = (state = INITIAL_STATE, action) => {
 
 const userLoginReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-      case ActionType.USER_LOGIN_REQ:
+      case ActionType.USER_LOGIN_REQUEST:
         return {
           ...state,
           UserLoginLoading: true,

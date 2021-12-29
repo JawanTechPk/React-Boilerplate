@@ -1,17 +1,18 @@
 import ActionType from "../../Constants/constants";
+
 const UserSignupAction = (data) => {
   return (dispatch) => {
     dispatch({
-      type: ActionType.USER_SIGNUP_REQ,
+      type: ActionType.USER_SIGNUP_REQUEST,
     });
     console.log("action obj", data);
     const user = JSON.parse(localStorage.getItem("users")) || [];
 
-    const userIndex = user.findIndex((indexNumber) => {
+    const userIndex = user.find((indexNumber) => {
       return indexNumber.email === data.email;
     });
 
-    if (userIndex === -1) {
+    if (!userIndex) {
       user.push(data);
       localStorage.setItem("users", JSON.stringify(user));
       dispatch({
@@ -30,7 +31,7 @@ const UserSignupAction = (data) => {
 const UserLoginAction = (data) => {
   return (dispatch) => {
     dispatch({
-      type: ActionType.USER_LOGIN_REQ,
+      type: ActionType.USER_LOGIN_REQUEST,
     });
     console.log("action obj", data);
     const user = JSON.parse(localStorage.getItem("users")) || [];
@@ -62,6 +63,7 @@ const UserSigupEmptyMsg = () => {
     });
   };
 };
+
 const UserLoginEmptyMsg = () => {
   return (dispatch) => {
     dispatch({
